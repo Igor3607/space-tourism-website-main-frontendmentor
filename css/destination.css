@@ -1,0 +1,302 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Barlow", sans-serif;
+    background-image: url('/assets/destination/background-destination-desktop.jpg');
+    height:1024px;
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: 1440px 1024px;
+    color: rgb(255,255,255);
+}
+
+.destination{
+    margin-left: 11.5%; 
+}
+
+.destination-headline{
+    margin-top: 50px;
+}
+
+.destination-headline__title{
+    text-transform: uppercase;
+    word-spacing: 3px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.destination-headline__highlight{
+    color:rgb(160, 160, 160);
+}
+
+.destination__content{
+    display: flex;
+    margin-top: 150px;
+}
+
+.destination__images{
+    width: 480px;
+    height: 480px; 
+    margin-left: 4%;
+    margin-top: -15px;
+}
+
+.destination__description{
+    width: 445px;
+    margin-left:7.5%;
+}
+
+.destination-list{
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.destination-list__item{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    list-style-type: none;
+}
+
+.destination-list__item:hover{
+    cursor: pointer;
+    border-bottom: 3px solid rgb(255,255,255);
+}
+
+.destination__name{
+    font-size: 95px;
+    font-weight: 400;
+    font-family: "Bellefair", serif;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.destination__item{
+    width:100%;
+    line-height: 2;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color:hsl(0, 0%, 63%);
+
+}
+
+.destination__line{
+    width: 100%;
+    border-bottom: 2px solid rgb(97,97,97);
+}
+
+.destination__information{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.destination__information-paragraph{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color:hsl(0, 0%, 63%);
+}
+
+.destination__information-distance, .destination__information-travel{
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.destination__selected{
+    border-bottom: 3px solid rgb(255,255,255);
+}
+
+/*Библиотека  SweetAlert2 для всплывающего окна*/
+.my-popup-class {
+    background-color:hsl(0, 0%, 100%);
+}
+
+.my-title-class{
+    color:hsl(354, 61%, 28%);
+}
+
+.my-confirm-button-class{
+    background-color:hsl(354, 70%, 54%);
+    color:hsl(0, 0%, 100%);  
+}
+
+.swal2-popup{
+    top:20%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .destination{
+        margin-left: auto; 
+    }
+
+    .destination-headline{
+        margin-left: 11.5%;
+    }
+  
+    .destination__content{
+        justify-content: center;
+    }
+
+    .destination__description{
+        width: 40%;
+        margin-left:3%;
+    }
+
+}
+
+@media only screen and (max-width: 1150px) {
+    .destination-headline{
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+     
+    .destination__content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .destination__images{
+        width: 300px;
+        height: 300px; 
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 80px;
+    }
+
+    .destination__image{
+        width: 100%;
+        height: auto;
+    }
+
+    .destination-list{
+        justify-content: center;
+    }
+
+    .destination__description{
+        margin-left:0;
+        width:67%;
+    }
+    
+    .destination__name{
+        text-align: center;
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+
+    .destination__item{
+        width:100%;
+        line-height: 2;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    .destination__line{
+        width: 100%;
+        border-bottom: 2px solid rgb(97,97,97);
+        margin-bottom: 20px;
+    }
+
+    .destination__information{
+        margin-left: 10.5%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+      background-image: url('/assets/destination/background-destination-tablet.jpg');
+      height: 1024px;
+      background-size: auto 1024px;
+        }
+        .destination-headline__title{
+            font-size: 24px;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .destination-headline__title{
+            margin-bottom: 30px;
+        }
+
+        .destination__description{
+            width:90%;
+        }
+
+        .destination__images{
+            width: 150px;
+            height: 150px; 
+            margin-top: 20px;
+            margin-bottom: 60px;
+        }
+
+         .destination-list__item{
+            font-size: 15px;
+        }
+        .destination__name{
+            font-size: 55px;
+        }
+        .destination__item{
+            width:90%;
+            font-size: 14px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        .destination__line{
+            width: 80%;
+            margin: 0 auto;
+            border-bottom: 2px solid rgb(97,97,97);
+            margin-bottom: 20px;
+        }
+
+        .destination__information{
+            display: block;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .destination__information-paragraph{
+            margin-bottom: 3px;
+        }
+
+        .destination__information-distance{
+            margin-bottom: 20px;
+        }
+    
+        }
+
+    @media only screen and (max-width: 375px) {
+        body {
+            display: grid; /*задаем для main и навигации navbar.css*/
+            background-image: url('/assets/destination/background-destination-mobile.jpg');
+            height: 880px;
+            background-size: auto 880px;
+            }
+
+            .destination{
+                grid-area: 1 / 1; /*задаем для main и навигации navbar.css*/
+                margin-top: 50px;
+            }
+            .destination-headline__title{
+                margin-left: 0;
+                font-size: 22px;
+                text-align: center;
+            }
+        
+
+        }   

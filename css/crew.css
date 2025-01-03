@@ -1,0 +1,314 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Barlow", sans-serif;
+    background-image: url('/assets/crew/background-crew-desktop.jpg');
+    background-repeat: no-repeat;
+    height:1024px;
+    background-position:top center;
+    background-size: 1440px 1024px;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+}
+
+.crew-headline{
+    margin-left: 11.5%;
+    margin-top: 50px;
+    margin-bottom: 250px; 
+}
+
+.crew-headline__title{
+    text-transform: uppercase;
+    word-spacing: 3px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.crew-headline__highlight{
+    color: hsl(0, 0%, 63%);
+}
+
+.crew__details{
+    display: flex;
+    width: 77%; 
+    margin: 0 auto;
+    
+}
+
+.crew__description{
+    max-width:48.56%; 
+    margin-right: 5%;
+}
+
+.crew__role{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 34px;
+    margin-bottom: 27px;
+    font-family: "Bellefair", serif;
+    color: hsl(0, 0%, 63%);
+}
+
+.crew__name{
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight:500;
+    margin-bottom: 35px;
+    font-family: "Bellefair", serif;
+}
+
+.crew__bio{
+    font-size: 18px;
+    line-height: 2;
+    color: hsl(0, 0%, 63%);
+}
+
+.crew-list{
+    display: flex;
+    column-gap: 35px;
+    bottom: 0%;
+    position: absolute;
+    margin-bottom: 90px;
+}
+
+.crew-list__item{
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   background-color: hsl(0, 0%, 50%);
+   list-style-type: none;
+}
+
+.crew-list__item:hover{
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.crew__images{
+    left:55%;
+    bottom: 0%;
+    position: absolute;
+    margin-bottom: 90px;
+ }
+ 
+ .crew__image{
+     width: 90%;
+ }
+
+.crew__selected{
+    background-color: hsl(0, 0%, 100%);  
+}
+
+/*Библиотека  SweetAlert2 для всплывающего окна*/
+.my-popup-class {
+    background-color:hsl(0, 0%, 100%);
+}
+
+.my-title-class{
+    color:hsl(354, 61%, 28%);
+}
+
+.my-confirm-button-class{
+    background-color:hsl(354, 70%, 54%);
+    color:hsl(0, 0%, 100%);  
+}
+
+.swal2-popup{
+    top:20%;
+}
+
+
+@media only screen and (max-width: 1150px) {
+    .crew-headline{
+        margin-left: 40px;
+        margin-bottom: 65px;
+        height: 24px;
+    }
+
+    .crew__details{
+     width:66.5%;
+     flex-direction: column;   
+    }
+
+    .crew__description{
+        max-width:100%; 
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .crew__images{
+        left:50%;
+        width:455px;
+        height: 425px; 
+        transform: translate(-50%);         
+        position: absolute;
+        margin-bottom: 0px;
+        overflow: hidden;
+     }
+     
+     .crew__image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: 108%;
+     }
+
+    .crew__role{
+        font-size: 22px;
+    }
+   
+.crew__name{
+    height:auto;
+    font-size: 42px;
+}
+
+.crew__bio{
+    height: auto;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+    .crew-list{
+        top:54%;
+        left:50%;
+        transform: translate(-54%, -50%);
+        position: absolute;
+        bottom:auto;
+        justify-content: center;
+        margin-bottom: 45px;
+    }
+    
+    .crew-list__item{
+       width: 15px;
+       height: 15px;
+       border-radius: 50%;
+    }
+    
+    .crew__selected{
+        background-color: hsl(0, 0%, 100%); 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+      background-image: url('/assets/crew/background-crew-tablet.jpg');
+        height: 1024px;
+        background-size: auto 1024px;
+        }
+
+        .crew-headline{
+            margin-left: 40px;
+        }
+
+        .crew-headline__title{
+            font-size: 24px;
+        }
+
+        .crew-list{
+            column-gap: 20px;
+           
+        }
+
+        .crew-list__item{
+            width: 10px;
+            height: 10px;
+         }
+
+    }
+
+    @media only screen and (max-width: 575px) {
+        .crew__details{
+            width:90%;
+        }
+        .crew__images{
+            width:auto; 
+            height:328px; 
+            margin-bottom: 35px;
+         }
+
+         .crew__image{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+            height: 108%;
+         }
+    
+    }
+
+    @media only screen and (max-width: 430px) {
+        .crew__role{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .crew__name{
+            font-size: 28px;
+        }
+
+        .crew__bio{
+            height: auto;
+            font-size: 15px;
+            line-height: 2;
+            margin-bottom: 50px;
+        }
+        
+        .crew-list{
+            top:56%;
+            left:50%;
+            transform: translate(-54%, -50%);
+            position: absolute;
+            bottom:auto;
+            justify-content: center;
+            margin-bottom: 45px;
+        }
+
+        .crew__images{
+            width:85%;
+         }
+
+        .crew__image{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+            height: 100%;
+         }
+       
+    }
+
+    @media only screen and (max-width: 375px) {
+        body {
+            display: grid; /*задаем для main и навигации navbar.css*/
+            background-image: url('/assets/crew/background-crew-mobile.jpg');
+            height: 880px;
+            background-size: auto 880px;           
+         }
+
+         .crew{
+            grid-area: 1 / 1; /*задаем для main и навигации navbar.css*/
+            margin-top: 80px;
+        }
+
+         .crew-headline{
+            display:flex;
+            justify-content: center;
+            margin-left:auto;
+            margin-bottom: 45px;
+            height: auto;
+        }
+        
+        .crew-headline__title{
+            font-size: 22px;
+        }
+        }   

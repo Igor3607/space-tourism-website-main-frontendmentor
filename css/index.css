@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Barlow", sans-serif;
+    background-image: url('/assets/home/background-home-desktop.jpg');
+    height:1024px;
+    background-repeat: no-repeat;
+    background-position:top center;
+    background-size: 1440px 1024px;
+    color: hsl(0, 0%, 100%);
+}
+
+.home{
+    display:flex;
+    height: 888px;
+    padding-top: 424px;
+    justify-content: space-around;
+}
+
+.home__intro{
+    width: 540px;
+    height:343px;
+}
+
+.home__intro-text{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color:hsl(0, 0%, 75%);
+}
+
+.home__title{
+    font-weight: 400;
+    font-size: 140px;
+    text-transform: uppercase;
+    font-family: "Bellefair", serif;
+    margin-bottom: 10px;
+}
+
+.home__description{
+    font-size: 18px;
+    height: 96px;
+    line-height: 2;
+    color:hsl(0, 0%, 75%);
+}
+
+.home__explore{
+    width: 280px;
+    height: 280px;
+    margin-top: 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 180px;
+    position: relative;
+}
+
+.home__explore:hover{
+    cursor:pointer;
+    box-shadow: 0px 0px 30px 20px hsl(60, 100%, 59%);
+}
+
+.home__explore-text{
+    color:hsl(0, 0%, 0%);
+    text-transform: uppercase;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 950px) {
+
+.home{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+}
+
+.home__intro{
+    height: 334px;
+    text-align: center;
+}
+
+.home__explore{
+    width: 272px;
+    height: 272px;
+}
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+      background-image: url('/assets/home/background-home-tablet.jpg');
+        height: 1024px;
+        background-size: auto 1024px;
+        }
+
+        .home{
+            height:928px;
+        }
+
+        .home__description{
+            margin-bottom: 120px;
+        }
+        
+  }
+
+  @media only screen and (max-width: 700px) {
+  
+
+.home__intro{
+    width: 90%;
+    height: auto;
+}
+.home__intro-text{
+    margin-bottom: 40px;
+}
+
+.home__title{
+    margin-bottom: 55px;
+}
+
+.home__explore{
+   width: 200px; 
+   height: 200px;
+   margin-top: 0px;
+}
+
+.home__explore-text{
+    font-size: 26px;
+}
+  }
+
+@media only screen and (max-width: 500px) {
+    .home__intro-text{
+        font-size: 18px;
+    }
+    .home__title{
+        font-size: 110px;
+    }
+}
+
+  @media only screen and (max-width: 375px) {
+    body {
+
+        display: grid; /*Устанавливает навигацию из "navbar.css" поверх элемента "main"*/
+        background-image: url('/assets/home/background-home-mobile.jpg');
+        height: 812px;
+        background-size: auto 812px;
+        }
+
+        .home{
+            height:724px;
+            flex-direction: column;
+            justify-content:left;
+            grid-area: 1 / 1; /*Устанавливает навигацию из "navbar.css" поверх элемента "main*/
+            margin-top: 80px;
+        }
+
+        .home__title{
+            margin-bottom: 40px;
+            font-size: 80px;
+        }
+        .home__description{
+            font-size: 15px;
+            height: auto;
+            line-height: 1.5;
+            margin-bottom: 130px;
+        }
+        .home__intro-text{
+            font-size: 12px;
+            margin-top: 28px; 
+            margin-bottom: 28px;
+        }
+
+        .home__explore{
+            width: 144px; 
+            height: 144px;
+         }
+         .home__explore-text{
+            font-size: 20px;
+        }   
+    
+  }
+
+
+
+
+  
