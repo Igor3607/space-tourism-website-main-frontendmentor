@@ -19,7 +19,7 @@ body{
     height: 136px;
 }
 
-.header__logo{
+.header-logo{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,12 +29,12 @@ body{
     margin-top: 63px;
 }
 
-.logo__svg{
+.logo-svg{
     width: 48px;
     height: 48px;
 }
 
-.header__divider{
+.header-divider{
     display: block;
     stroke-width:3;
     stroke:hsl(0, 0%, 38%);
@@ -47,7 +47,7 @@ body{
 
 }
 
-.navigation__divider{
+.navigation-divider{
     display: block;
     stroke-width:3;
     stroke:hsl(0, 0%, 38%);
@@ -56,7 +56,7 @@ body{
     z-index: 999;
 }
 
-.navigation__list{
+.navigation-list{
     display: flex;
     column-gap: 50px;
     justify-content: center;
@@ -67,36 +67,36 @@ body{
     margin-top: 40px;
 }
 
-.navigation__item{
+.navigation-item{
     list-style-type: none;
     text-transform: uppercase;
     padding-top: 35px; 
     font-weight: 300 !important;
 }
 
-.navigation__link{
+.navigation-link{
     text-decoration: none;  
     color: hsl(0, 0%, 100%);
 }
 
 
-.navigation__number{
+.navigation-number{
     font-size: 18px;
     font-weight: 600;
     margin-right: 5px;
     letter-spacing: 2px;
 }
 
-.navigation__icon-close{
+.navigation-icon-close{
     display:none;    
 }
 
-.header__icon-hamburger{
+.header-icon-hamburger{
     display: none;
 }
 
 @media only screen and (max-width: 950px) {
-    .navigation__list{
+    .navigation-list{
         column-gap: 35px;
         justify-content: right;
         min-width: 630px; 
@@ -107,10 +107,10 @@ body{
 }
 
 @media only screen and (max-width: 820px) {
-    .header__divider{
+    .header-divider{
           display:none;
       }
-      .navigation__divider{
+      .navigation-divider{
           display: none;
       }
   }
@@ -121,7 +121,7 @@ body{
         height: 96px;
     }       
 
-    .header__logo{
+    .header-logo{
         margin-left: 38px;
         height: 48px;
         margin-top: 26px;
@@ -129,7 +129,7 @@ body{
     }
 
  
-     .navigation__list{
+     .navigation-list{
         column-gap: 25px;
         justify-content: right;
         min-width:580px; 
@@ -138,14 +138,14 @@ body{
         padding-right: 30px;
     }
 
-    .navigation__item{
+    .navigation-item{
         list-style-type: none;
         text-transform: uppercase;
         padding-top: 38px;
         height: 96px;
     }
 
-    .navigation__number{
+    .navigation-number{
         font-size: 16px;
     }
     }
@@ -162,7 +162,7 @@ body{
             position: relative;
         }
     
-      .navigation__list{
+      .navigation-list{
         display: none;
         min-width:254px; 
         padding-top: 140px; 
@@ -171,23 +171,23 @@ body{
         height: 1024px;
       }
     
-      .navigation__item{
+      .navigation-item{
         padding-top: 0px; 
         height:auto; 
         margin-bottom: 40px;
     }
     
-    .header__icon-hamburger{
+    .header-icon-hamburger{
         display: block;
         margin-top: 35px;
         margin-right: 22px;
     }
 
-    .header__icon-hamburger:hover{
+    .header-icon-hamburger:hover{
         cursor:pointer;
       }
     
-     .navigation__icon-close{
+     .navigation-icon-close{
         display: block;
         position: absolute;
         z-index: 1;
@@ -195,11 +195,11 @@ body{
         right:22px;
     }
     
-      .navigation__icon-close:hover{
+      .navigation-icon-close:hover{
         cursor:pointer;
     }
 
-  .selected__nav-right{
+  .selected-nav-right{
         border-right: 5px solid rgb(255, 255, 255);
     }
 
@@ -207,12 +207,12 @@ body{
 
 @media only screen and (min-width: 700px) {
 
-    .selected__nav{
+    .selected-nav{
         border-bottom: 3px solid rgb(255, 255, 255);
         padding-bottom: 40px;   
     }
     
- .navigation__link:hover:not(.selected__nav) {
+ .navigation-link:hover:not(.selected-nav) {
         border-bottom: 3px solid rgb(255, 255, 255);
         padding-bottom: 39px;   
     }
@@ -224,14 +224,14 @@ body{
         position: relative;
     }
 
-        .header__logo{
+        .header-logo{
             display: block;
             margin-top: 24px;
             margin-left: 24px;
             margin-right: 0px;
         }
 
-        .logo__svg{
+        .logo-svg{
             width: 40px;
             height: 40px;
         }
@@ -241,7 +241,7 @@ body{
             grid-area: 1 / 1; /*задаем  grid display: grid из index.css, destination.css, crew.css, technology.css чтобы задать 100% высоты навигации на странице*/
         }
     
-    .navigation__list{
+    .navigation-list{
           height: 100%;
           }           
 

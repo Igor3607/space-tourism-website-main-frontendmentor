@@ -8,36 +8,36 @@ fetch("data.json")
     const divElement = document.createElement('div');
     divElement.innerHTML = `
       <div class="crew-headline">
-          <h1 class="crew-headline__title"><span class="crew-headline__highlight">02</span> Meet your crew</h1>
+          <h1 class="crew-headline-title"><span class="crew-headline-highlight">02</span> Meet your crew</h1>
   </div>
 
-        <div class="crew__details">
+        <div class="crew-details">
 
-        <div class="crew__description">
+        <div class="crew-description">
        
-        <div class="crew__roles">
-        ${data.crew.map(item => `<h2 class="crew__role">${item.role}</h2>`).join('')}
+        <div class="crew-roles">
+        ${data.crew.map(item => `<h2 class="crew-role">${item.role}</h2>`).join('')}
    </div>
 
-        <div class="crew__names">
-        ${data.crew.map(item => `<h2 class="crew__name">${item.name}</h2>`).join('')}
+        <div class="crew-names">
+        ${data.crew.map(item => `<h2 class="crew-name">${item.name}</h2>`).join('')}
         </div>
 
-        <div class="crew__bios">
-        ${data.crew.map(item => `<p  class="crew__bio">${item.bio}</p>`).join('')}
+        <div class="crew-bios">
+        ${data.crew.map(item => `<p  class="crew-bio">${item.bio}</p>`).join('')}
         </div>
 
     <ul class="crew-list">
-        <li class = "crew-list__item"></li>
-        <li class = "crew-list__item"></li>
-        <li class = "crew-list__item"></li>
-        <li class = "crew-list__item"></li>
+        <li class = "crew-list-item"></li>
+        <li class = "crew-list-item"></li>
+        <li class = "crew-list-item"></li>
+        <li class = "crew-list-item"></li>
       </ul>
 
 </div>
 
-      <div class="crew__images">
-      ${data.crew.map(item => `<img src="${item.images.png}" alt="${item.name}"  class="crew__image" />`).join('')}
+      <div class="crew-images">
+      ${data.crew.map(item => `<img src="${item.images.png}" alt="${item.name}"  class="crew-image" />`).join('')}
        </div>
 
       </div>
@@ -45,16 +45,16 @@ fetch("data.json")
     `;
     crewBlock.appendChild(divElement);
 
-  const crewListItem = document.querySelectorAll(".crew-list__item");
-  const crewRole = document.querySelectorAll(".crew__role");
-  const crewName = document.querySelectorAll(".crew__name");
-  const crewBio = document.querySelectorAll(".crew__bio");
-  const crewImage = document.querySelectorAll(".crew__image");
+  const crewListItem = document.querySelectorAll(".crew-list-item");
+  const crewRole = document.querySelectorAll(".crew-role");
+  const crewName = document.querySelectorAll(".crew-name");
+  const crewBio = document.querySelectorAll(".crew-bio");
+  const crewImage = document.querySelectorAll(".crew-image");
 
  let currentIndex = 0;
 
-// Устанавливаем класс 'crew__selected' для первого элемента по умолчанию
-crewListItem[currentIndex].classList.add("crew__selected");
+// Устанавливаем класс 'crew-selected' для первого элемента по умолчанию
+crewListItem[currentIndex].classList.add("crew-selected");
 
  const showContent = (index) => {
 
@@ -77,8 +77,8 @@ crewListItem[currentIndex].classList.add("crew__selected");
   elem.addEventListener("click", ()=> {
     currentIndex = index; // Обновляем текущий индекс
     showContent(currentIndex); // Показываем соответствующий контент
-    crewListItem.forEach(item => item.classList.remove("crew__selected"));
-    elem.classList.add("crew__selected");
+    crewListItem.forEach(item => item.classList.remove("crew-selected"));
+    elem.classList.add("crew-selected");
   });
 });
 

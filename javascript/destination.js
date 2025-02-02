@@ -8,35 +8,35 @@ fetch("data.json")
   const divElement = document.createElement('div');
   divElement.innerHTML = `
        <div class="destination-headline">
-      <h1 class="destination-headline__title"><span class="destination-headline__highlight">01</span> Pick your destination</h1>
+      <h1 class="destination-headline-title"><span class="destination-headline-highlight">01</span> Pick your destination</h1>
  </div>
 
-  <div class="destination__content">
+  <div class="destination-content">
 
-  <div class="destination__images">
-      ${data.destinations.map(item => `<img src="${item.images.png}" alt="${item.name}"  class="destination__image" />`).join('')}       
+  <div class="destination-images">
+      ${data.destinations.map(item => `<img src="${item.images.png}" alt="${item.name}"  class="destination-image" />`).join('')}       
       </div>
 
-      <div class="destination__description">
+      <div class="destination-description">
       
        <ul class="destination-list">
-      ${data.destinations.map(item => `<li class="destination-list__item">${item.name}</li>`).join('')}
+      ${data.destinations.map(item => `<li class="destination-list-item">${item.name}</li>`).join('')}
       </ul>
-        ${data.destinations.map(item => `<h2 class="destination__name">${item.name}</h2> `).join('')}
-        ${data.destinations.map(item => `<p class="destination__item">${item.description}</p>`).join('')}
+        ${data.destinations.map(item => `<h2 class="destination-name">${item.name}</h2> `).join('')}
+        ${data.destinations.map(item => `<p class="destination-item">${item.description}</p>`).join('')}
         
-        <div class="destination__line"></div>
+        <div class="destination-line"></div>
         
-        <div class="destination__information">
+        <div class="destination-information">
         
         <div>
-        <p class="destination__information-paragraph">avr. distance</p>
-        ${data.destinations.map(item => `<h4 class="destination__information-distance">${item.distance}</h4>`).join('')}
+        <p class="destination-information-paragraph">avr. distance</p>
+        ${data.destinations.map(item => `<h4 class="destination-information-distance">${item.distance}</h4>`).join('')}
         </div>
 
           <div>
-        <p class="destination__information-paragraph">est. travel time</p>
-        ${data.destinations.map(item => `<h4 class="destination__information-travel">${item.travel}</h4>`).join('')}
+        <p class="destination-information-paragraph">est. travel time</p>
+        ${data.destinations.map(item => `<h4 class="destination-information-travel">${item.travel}</h4>`).join('')}
         </div>
 
         <div>
@@ -46,17 +46,17 @@ fetch("data.json")
   `;
   destinationBlock.appendChild(divElement);
 
-  const listItem = document.querySelectorAll(".destination-list__item");
-  const destinationImage = document.querySelectorAll(".destination__image");
-  const destinationName = document.querySelectorAll(".destination__name");
-  const destinationItem = document.querySelectorAll(".destination__item");
-  const destinationInformationDistance = document.querySelectorAll(".destination__information-distance");
-  const destinationInformationTravel = document.querySelectorAll(".destination__information-travel");
+  const listItem = document.querySelectorAll(".destination-list-item");
+  const destinationImage = document.querySelectorAll(".destination-image");
+  const destinationName = document.querySelectorAll(".destination-name");
+  const destinationItem = document.querySelectorAll(".destination-item");
+  const destinationInformationDistance = document.querySelectorAll(".destination-information-distance");
+  const destinationInformationTravel = document.querySelectorAll(".destination-information-travel");
 
   let currentIndex = 0;
 
-   // Устанавливаем класс 'destination__selected' для первого элемента по умолчанию
-   listItem[currentIndex].classList.add("destination__selected");
+   // Устанавливаем класс 'destination-selected' для первого элемента по умолчанию
+   listItem[currentIndex].classList.add("destination-selected");
 
   const showContent = (index) => {
     
@@ -81,8 +81,8 @@ listItem.forEach((elem, index) => {
   elem.addEventListener("click", ()=> {
     currentIndex = index; // Обновляем текущий индекс
     showContent(currentIndex); // Показываем соответствующий контент
-    listItem.forEach(item => item.classList.remove("destination__selected"));
-    elem.classList.add("destination__selected");
+    listItem.forEach(item => item.classList.remove("destination-selected"));
+    elem.classList.add("destination-selected");
   });
 });
 

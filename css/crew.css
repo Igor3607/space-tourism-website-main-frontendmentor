@@ -25,30 +25,30 @@ body{
     margin-bottom: 250px; 
 }
 
-.crew-headline__title{
+.crew-headline-title{
     text-transform: uppercase;
     word-spacing: 3px;
     font-size: 28px;
     font-weight: 400;
 }
 
-.crew-headline__highlight{
+.crew-headline-highlight{
     color: hsl(0, 0%, 63%);
 }
 
-.crew__details{
+.crew-details{
     display: flex;
     width: 77%; 
     margin: 0 auto;
     
 }
 
-.crew__description{
+.crew-description{
     max-width:48.56%; 
     margin-right: 5%;
 }
 
-.crew__role{
+.crew-role{
     font-weight: 400;
     text-transform: uppercase;
     font-size: 34px;
@@ -57,7 +57,7 @@ body{
     color: hsl(0, 0%, 63%);
 }
 
-.crew__name{
+.crew-name{
     font-size: 55px;
     text-transform: uppercase;
     font-weight:500;
@@ -65,7 +65,7 @@ body{
     font-family: "Bellefair", serif;
 }
 
-.crew__bio{
+.crew-bio{
     font-size: 18px;
     line-height: 2;
     color: hsl(0, 0%, 63%);
@@ -79,7 +79,7 @@ body{
     margin-bottom: 90px;
 }
 
-.crew-list__item{
+.crew-list-item{
    width: 15px;
    height: 15px;
    border-radius: 50%;
@@ -87,23 +87,23 @@ body{
    list-style-type: none;
 }
 
-.crew-list__item:hover{
+.crew-list-item:hover{
     cursor: pointer;
     background-color: hsl(0, 0%, 100%);
 }
 
-.crew__images{
+.crew-images{
     left:55%;
     bottom: 0%;
     position: absolute;
     margin-bottom: 90px;
  }
  
- .crew__image{
+ .crew-image{
      width: 90%;
  }
 
-.crew__selected{
+.crew-selected{
     background-color: hsl(0, 0%, 100%);  
 }
 
@@ -133,18 +133,18 @@ body{
         height: 24px;
     }
 
-    .crew__details{
+    .crew-details{
      width:66.5%;
      flex-direction: column;   
     }
 
-    .crew__description{
+    .crew-description{
         max-width:100%; 
         margin-right: auto;
         text-align: center;
     }
 
-    .crew__images{
+    .crew-images{
         left:50%;
         width:455px;
         height: 425px; 
@@ -154,7 +154,7 @@ body{
         overflow: hidden;
      }
      
-     .crew__image{
+     .crew-image{
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -162,16 +162,16 @@ body{
         height: 108%;
      }
 
-    .crew__role{
+    .crew-role{
         font-size: 22px;
     }
    
-.crew__name{
+.crew-name{
     height:auto;
     font-size: 42px;
 }
 
-.crew__bio{
+.crew-bio{
     height: auto;
     font-size: 16px;
     line-height: 2;
@@ -188,13 +188,13 @@ body{
         margin-bottom: 45px;
     }
     
-    .crew-list__item{
+    .crew-list-item{
        width: 15px;
        height: 15px;
        border-radius: 50%;
     }
     
-    .crew__selected{
+    .crew-selected{
         background-color: hsl(0, 0%, 100%); 
     }
 }
@@ -210,7 +210,7 @@ body{
             margin-left: 40px;
         }
 
-        .crew-headline__title{
+        .crew-headline-title{
             font-size: 24px;
         }
 
@@ -219,7 +219,7 @@ body{
            
         }
 
-        .crew-list__item{
+        .crew-list-item{
             width: 10px;
             height: 10px;
          }
@@ -227,16 +227,16 @@ body{
     }
 
     @media only screen and (max-width: 575px) {
-        .crew__details{
+        .crew-details{
             width:90%;
         }
-        .crew__images{
+        .crew-images{
             width:auto; 
             height:328px; 
             margin-bottom: 35px;
          }
 
-         .crew__image{
+         .crew-image{
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -247,16 +247,16 @@ body{
     }
 
     @media only screen and (max-width: 430px) {
-        .crew__role{
+        .crew-role{
             font-size: 20px;
             margin-bottom: 20px;
         }
 
-        .crew__name{
+        .crew-name{
             font-size: 28px;
         }
 
-        .crew__bio{
+        .crew-bio{
             height: auto;
             font-size: 15px;
             line-height: 2;
@@ -273,11 +273,11 @@ body{
             margin-bottom: 45px;
         }
 
-        .crew__images{
+        .crew-images{
             width:85%;
          }
 
-        .crew__image{
+        .crew-image{
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -308,7 +308,7 @@ body{
             height: auto;
         }
         
-        .crew-headline__title{
+        .crew-headline-title{
             font-size: 22px;
         }
         }   
